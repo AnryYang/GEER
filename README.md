@@ -1,5 +1,5 @@
 This is the code for the paper titled "Efficient Estimation of Effective Resistance" in SIGMOD 2023.
-Please download datasets from [here](https://renchi.ac.cn/datasets/).
+Please download datasets from [here](https://entuedu-my.sharepoint.com/:f:/g/personal/yang0461_e_ntu_edu_sg/EvIEyc3Wx3dEpSDzKIDx9zgBOnMz616SteEbTieUrd8Xwg?e=OLr3N9).
 
 ## Environment
 - System: Ubuntu 18.04
