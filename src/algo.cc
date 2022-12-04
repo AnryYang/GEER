@@ -365,7 +365,7 @@ double powerIter(uint src, uint tgt, std::vector<double>& svec, std::vector<doub
 
 		        double residue = tvec[v];
 		        if(v==tgt) pi+=residue/(double)graph.m_deg[v];
-		        if(v==src) pi-=2*residue/(double)graph.m_deg[v];
+		        if(v==src) pi-=2*residue/(double)graph.m_deg[tgt];
 				tvec[v]=0;
 				for(const auto& u: graph.m_edges[v]){
 					tmpT.insert(u);
@@ -461,7 +461,7 @@ double tunePowerIter(uint src, uint tgt, std::vector<double>& svec, std::vector<
 
 		        double residue = tvec[v];
 		        if(v==tgt) pi+=residue/(double)graph.m_deg[v];
-		        if(v==src) pi-=2*residue/(double)graph.m_deg[v];
+		        if(v==src) pi-=2*residue/(double)graph.m_deg[tgt];
 				tvec[v]=0;
 				for(const auto& u: graph.m_edges[v]){
 					tmpT.insert(u);
